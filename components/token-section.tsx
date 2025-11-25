@@ -59,25 +59,7 @@ export function TokenSection() {
             </div>
           </div>
 
-          {/* Contract Address Box */}
-          <div className="w-full max-w-[600px] p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-              <div className="flex flex-col gap-1">
-                <span className="text-muted-foreground text-xs uppercase tracking-wider">Contract Address</span>
-                <span className="text-foreground font-mono text-sm">{contractAddress}</span>
-              </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={copyToClipboard}
-                disabled={contractAddress === "Coming Soon"}
-                className="gap-2 bg-transparent"
-              >
-                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                {copied ? "Copied!" : "Copy"}
-              </Button>
-            </div>
-          </div>
+          
 
           <div className="w-full max-w-[900px] p-6 md:p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
             <div className="flex flex-col items-center gap-2 mb-6">
