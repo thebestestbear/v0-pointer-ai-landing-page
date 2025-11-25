@@ -6,34 +6,44 @@ import { ChevronDown } from "lucide-react"
 
 const faqData = [
   {
-    question: "What is Pointer and who is it for?",
+    question: "Who is behind Forge AI?",
     answer:
-      "Pointer is an AI-powered development platform designed for developers, teams, and organizations who want toaccelerate their coding workflow. It's perfect for both individual developers looking to enhance their productivity and teams seeking seamless collaboration tools.",
+      "Forge AI is developed by a team of systems engineers at Vercel, the company behind Next.js and the leading platform for frontend development. This is Vercel's first venture into the Web3 ecosystem, combining our expertise in developer tooling with blockchain technology.",
   },
   {
-    question: "How does Pointer's AI code review work?",
+    question: "What is Forge AI?",
     answer:
-      "Our AI analyzes your code in real-time, providing intelligent suggestions for improvements, catching potential bugs, and ensuring best practices. It learns from your coding patterns and adapts to your team's standards, making code reviews faster and more consistent.",
+      "Forge AI is an upcoming AI-powered development platform that uses intelligent agents to write, review, and optimize code. It's designed for developers, teams, and organizations who want to 10x their coding productivity.",
   },
   {
-    question: "Can I integrate Pointer with my existing tools?",
+    question: "What is the $FORGE token and why do I need it?",
     answer:
-      "Yes! Pointer offers one-click integrations with popular development tools including GitHub, GitLab, VS Code, Slack, and many more. Our MCP connectivity allows you to easily manage and configure server access across your entire development stack.",
+      "$FORGE is the native utility token powering the Forge AI ecosystem on Solana. Token holders gain access to premium AI features, participate in governance decisions, receive exclusive airdrops, and get priority access to new features. It's the key to unlocking the full potential of Forge AI.",
   },
   {
-    question: "What's included in the free plan?",
+    question: "When is the token launch?",
     answer:
-      "The free plan includes real-time code suggestions, basic integrations, single MCP server connection, up to 2 AI coding agents, and Vercel deployments with Pointer branding. It's perfect for individual developers getting started.",
+      "The $FORGE token launch is coming very soon via Pump.fun fair launch. Join our waitlist and follow us on Twitter to be the first to know when the contract address is live. Early supporters will receive priority access and potential airdrop rewards.",
   },
   {
-    question: "How do parallel coding agents work?",
+    question: "How can I buy $FORGE tokens?",
     answer:
-      "Our parallel coding agents can work on different parts of your codebase simultaneously, solving complex problems faster than traditional single-threaded approaches. You can launch multiple agents to handle different tasks like bug fixes, feature development, and code optimization concurrently.",
+      "$FORGE will launch exclusively on Pump.fun as a fair launch—no presale, no private allocation. Simply connect your Solana wallet (Phantom, Solflare, etc.), ensure you have SOL, and swap directly on Pump.fun. Contract address will be announced on our official Twitter.",
   },
   {
-    question: "Is my code secure with Pointer?",
+    question: "Why Pump.fun instead of traditional DEX launches?",
     answer:
-      "Absolutely. We use enterprise-grade security measures including end-to-end encryption, secure data transmission, and compliance with industry standards. Your code never leaves your secure environment without your explicit permission, and we offer on-premises deployment options for enterprise customers.",
+      "Pump.fun ensures a truly fair launch where everyone has equal opportunity from block one. No presale dumps, no insider allocations, no hidden wallets. This aligns with our commitment to building a community-first project where early believers are rewarded fairly.",
+  },
+  {
+    question: "What makes Forge AI different from other AI tools?",
+    answer:
+      "Forge AI features parallel coding agents that work simultaneously on different tasks, real-time code previews, one-click integrations, and is backed by Vercel's infrastructure. The $FORGE token creates a sustainable ecosystem where users directly benefit from the platform's growth.",
+  },
+  {
+    question: "Is my investment safe?",
+    answer:
+      "We're building for the long term with a transparent tokenomics model: 95% community fair launch, 2.5% dev allocation (locked and vested), and 2.5% ecosystem. The dev team is doxxed as Vercel employees. Always DYOR and only invest what you can afford. This is not financial advice.",
   },
 ]
 
@@ -99,7 +109,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm font-medium leading-[18.20px] break-words">
-            Everything you need to know about Pointer and how it can transform your development workflow
+            Everything you need to know about $FORGE and Forge AI
           </p>
         </div>
       </div>

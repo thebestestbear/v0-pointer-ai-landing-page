@@ -1,11 +1,18 @@
+import type { ComponentType } from "react"
 import AiCodeReviews from "./bento/ai-code-reviews"
 import RealtimeCodingPreviews from "./bento/real-time-previews"
 import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration"
-import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration" // Updated import
+import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration"
 import EasyDeployment from "./bento/easy-deployment"
-import ParallelCodingAgents from "./bento/parallel-agents" // Updated import
+import ParallelCodingAgents from "./bento/parallel-agents"
 
-const BentoCard = ({ title, description, Component }) => (
+interface BentoCardProps {
+  title: string
+  description: string
+  Component: ComponentType
+}
+
+const BentoCard = ({ title, description, Component }: BentoCardProps) => (
   <div className="overflow-hidden rounded-2xl border border-white/20 flex flex-col justify-start items-start relative">
     {/* Background with blur effect */}
     <div
