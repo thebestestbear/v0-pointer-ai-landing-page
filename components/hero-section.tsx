@@ -142,7 +142,7 @@ export function HeroSection() {
 
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#14F195]/30 bg-[#14F195]/10 mb-6">
           <div className="w-2 h-2 rounded-full bg-[#14F195] animate-pulse" />
-          <span className="text-[#14F195] text-sm font-medium">$FORGE Fair Launch on Pump.fun</span>
+          <span className="text-[#14F195] text-sm font-medium">$FORGE Live on Pump.fun</span>
         </div>
 
         <div className="mb-6">
