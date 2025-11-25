@@ -40,10 +40,10 @@ export function TeamSection() {
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-[#14F195] flex items-center justify-center text-2xl font-bold text-background shrink-0">
-                ?
+                <img src="https://pbs.twimg.com/profile_images/1939625043522146304/3z3zSWLx_400x400.jpg"></img>
               </div>
               <div className="flex-1">
-                <h3 className="text-foreground text-lg font-semibold">Your Name</h3>
+                <h3 className="text-foreground text-lg font-semibold">Rauno</h3>
                 <p className="text-primary text-sm font-medium">Systems Engineer @ Vercel</p>
                 <p className="text-muted-foreground text-sm mt-1">Project Lead, Forge AI</p>
               </div>
@@ -56,7 +56,7 @@ export function TeamSection() {
             </div>
             <div className="mt-4 flex gap-3">
               <a
-                href="https://twitter.com/yourhandle"
+                href="https://twitter.com/raunofreiberg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -64,7 +64,7 @@ export function TeamSection() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-                @yourhandle
+                @raunofreiberg
               </a>
             </div>
           </div>
