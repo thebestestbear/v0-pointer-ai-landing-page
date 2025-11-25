@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   creator: "Forge AI",
   publisher: "Forge AI",
   icons: {
-    icon: "/icon.svg",
+    icon: "https://i.ibb.co/KxF6pLpL/image.png",
   },
   openGraph: {
     type: "website",
