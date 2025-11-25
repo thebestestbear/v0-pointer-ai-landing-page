@@ -65,12 +65,12 @@ export function WaitlistModal({ children }: WaitlistModalProps) {
             </div>
             <p className="text-muted-foreground text-sm text-center">Follow us on Twitter for the latest updates</p>
             <a
-              href="https://twitter.com/forgeai"
+              href="https://twitter.com/raunofreiberg"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline text-sm font-medium"
             >
-              @forgeai
+              @raunofreiberg
             </a>
           </div>
         ) : (
