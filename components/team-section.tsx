@@ -1,29 +1,24 @@
 "use client"
-
 import { useEffect } from "react"
 
 const TWEET_ID = "1990540011931120121" // e.g., "1234567890123456789"
 
 export function TeamSection() {
   useEffect(() => {
-    // Load Twitter widget script
     const script = document.createElement("script")
     script.src = "https://platform.twitter.com/widgets.js"
     script.async = true
     script.charset = "utf-8"
     document.body.appendChild(script)
-
     return () => {
       const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')
-      if (existingScript) {
-        existingScript.remove()
-      }
+      if (existingScript) existingScript.remove()
     }
   }, [])
 
   return (
     <section className="py-16 md:py-24 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto"> {/* widened container for side-by-side */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-4">
             <span className="text-muted-foreground text-sm">Meet the Team</span>
@@ -35,75 +30,81 @@ export function TeamSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* Team Member Card */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-[#14F195] flex items-center justify-center text-2xl font-bold text-background shrink-0">
-                <img src="https://pbs.twimg.com/profile_images/1939625043522146304/3z3zSWLx_400x400.jpg"></img>
+        {/* NEW LAYOUT: vertical cards on left, tweet on right (md+) */}
+        <div className="grid md:grid-cols-3 gap-8 items-start">
+          {/* Left column: 2 profile cards stacked vertically */}
+          <div className="md:col-span-2 space-y-8">
+            {/* First Rauno Card */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-[#14F195] flex items-center justify-center text-2xl font-bold text-background shrink-0">
+                  <img src="https://pbs.twimg.com/profile_images/1939625043522146304/3z3zSWLx_400x400.jpg" alt="Rauno" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-foreground text-lg font-semibold">Rauno</h3>
+                  <p className="text-primary text-sm font-medium">Systems Engineer @ Vercel</p>
+                  <p className="text-muted-foreground text-sm mt-1">Project Lead, Forge AI</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h3 className="text-foreground text-lg font-semibold">Rauno</h3>
-                <p className="text-primary text-sm font-medium">Systems Engineer @ Vercel</p>
-                <p className="text-muted-foreground text-sm mt-1">Project Lead, Forge AI</p>
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Leading Vercel's first venture into the Solana ecosystem. Building AI-powered developer tools that
+                  leverage blockchain for transparent, community-driven development.
+                </p>
               </div>
-            </div>
-            <div className="mt-4 pt-4 border-t border-white/10">
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Leading Vercel's first venture into the Solana ecosystem. Building AI-powered developer tools that
-                leverage blockchain for transparent, community-driven development.
-              </p>
-            </div>
-            <div className="mt-4 flex gap-3">
-              <a
-                href="https://twitter.com/raunofreiberg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-                @raunofreiberg
-              </a>
-            </div>
-          </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-[#14F195] flex items-center justify-center text-2xl font-bold text-background shrink-0">
-                <img src="https://pbs.twimg.com/profile_images/1939625043522146304/3z3zSWLx_400x400.jpg"></img>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-foreground text-lg font-semibold">Rauno</h3>
-                <p className="text-primary text-sm font-medium">Systems Engineer @ Vercel</p>
-                <p className="text-muted-foreground text-sm mt-1">Project Lead, Forge AI</p>
+              <div className="mt-4 flex gap-3">
+                <a
+                  href="https://twitter.com/raunofreiberg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  @raunofreiberg
+                </a>
               </div>
             </div>
-            <div className="mt-4 pt-4 border-t border-white/10">
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Leading Vercel's first venture into the Solana ecosystem. Building AI-powered developer tools that
-                leverage blockchain for transparent, community-driven development.
-              </p>
-            </div>
-            <div className="mt-4 flex gap-3">
-              <a
-                href="https://twitter.com/raunofreiberg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-                @raunofreiberg
-              </a>
+
+            {/* Second Rauno Card (exactly the same) */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-[#14F195] flex items-center justify-center text-2xl font-bold text-background shrink-0">
+                  <img src="https://pbs.twimg.com/profile_images/1939625043522146304/3z3zSWLx_400x400.jpg" alt="Rauno" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-foreground text-lg font-semibold">Rauno</h3>
+                  <p className="text-primary text-sm font-medium">Systems Engineer @ Vercel</p>
+                  <p className="text-muted-foreground text-sm mt-1">Project Lead, Forge AI</p>
+                </div>
+              </div>
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Leading Vercel's first venture into the Solana ecosystem. Building AI-powered developer tools that
+                  leverage blockchain for transparent, community-driven development.
+                </p>
+              </div>
+              <div className="mt-4 flex gap-3">
+                <a
+                  href="https://twitter.com/raunofreiberg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  @raunofreiberg
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 overflow-hidden">
+          {/* Right column: Announcement tweet */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 overflow-hidden h-full">
             <h4 className="text-foreground text-sm font-medium mb-4">Latest Announcement</h4>
             <div className="min-h-[200px]">
-              {/* This will render the actual tweet - just change TWEET_ID at the top of the file */}
               <blockquote className="twitter-tweet" data-theme="dark" data-conversation="none">
                 <a href={`https://twitter.com/x/status/${TWEET_ID}`}>Loading tweet...</a>
               </blockquote>
