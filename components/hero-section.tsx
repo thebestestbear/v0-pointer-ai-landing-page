@@ -154,8 +154,7 @@ export function HeroSection() {
             Unleash the Power of AI Agents
           </h1>
           <p className="text-muted-foreground text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-lg mx-auto text-pretty">
-            Be among the first to experience intelligent AI agents that write, review, and optimize your code. Powered
-            by the $FORGE token on Solana.
+            Be among the first to experience intelligent AI agents that write, review, and optimize your code.
           </p>
         </div>
 
