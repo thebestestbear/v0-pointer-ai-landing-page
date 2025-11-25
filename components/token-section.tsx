@@ -6,7 +6,7 @@ import { Check, Copy, Users } from "lucide-react"
 
 export function TokenSection() {
   const [copied, setCopied] = useState(false)
-  const contractAddress = "Coming Soon"
+  const contractAddress = "CAADDY"
 
   const copyToClipboard = () => {
     if (contractAddress !== "Coming Soon") {
@@ -210,7 +210,7 @@ export function TokenSection() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <Button size="lg" className="gap-2 bg-[#14F195] text-black hover:bg-[#14F195]/90" asChild>
-              <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">
+              <a href="https://pump.fun/coin/CAADDY" target="_blank" rel="noopener noreferrer">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2L2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
@@ -218,7 +218,7 @@ export function TokenSection() {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="gap-2 bg-transparent" asChild>
-              <a href="https://solscan.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://solscan.io/token/CAADDY" target="_blank" rel="noopener noreferrer">
                 View on Solscan
               </a>
             </Button>
