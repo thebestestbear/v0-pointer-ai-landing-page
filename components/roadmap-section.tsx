@@ -5,7 +5,7 @@ export function RoadmapSection() {
       title: "Foundation",
       status: "current",
       items: [
-        "Fair launch on Pump.fun",
+        "Fair launch on Nad.fun",
         "Community building & social presence",
         "Forge AI beta waitlist",
         "Initial partnerships",
@@ -17,7 +17,7 @@ export function RoadmapSection() {
       status: "upcoming",
       items: [
         "Forge AI public beta launch",
-        "Pump.fun graduation to Raydium",
+        "Nad.fun graduation",
         "Staking rewards program",
         "Community governance launch",
       ],
