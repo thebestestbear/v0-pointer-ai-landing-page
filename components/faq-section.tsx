@@ -18,22 +18,22 @@ const faqData = [
   {
     question: "What is the $FORGE token and why do I need it?",
     answer:
-      "$FORGE is the native utility token powering the Forge AI ecosystem on Solana. Token holders gain access to premium AI features, participate in governance decisions, receive exclusive airdrops, and get priority access to new features. It's the key to unlocking the full potential of Forge AI.",
+      "$FORGE is the native utility token powering the Forge AI ecosystem on Monad. Token holders gain access to premium AI features, participate in governance decisions, receive exclusive airdrops, and get priority access to new features. It's the key to unlocking the full potential of Forge AI.",
   },
   {
     question: "When is the token launch?",
     answer:
-      "The $FORGE token launch is coming very soon via Pump.fun fair launch. Join our waitlist and follow us on Twitter to be the first to know when the contract address is live. Early supporters will receive priority access and potential airdrop rewards.",
+      "The $FORGE token launch is coming very soon via Nad.fun fair launch. Join our waitlist and follow us on Twitter to be the first to know when the contract address is live. Early supporters will receive priority access and potential airdrop rewards.",
   },
   {
     question: "How can I buy $FORGE tokens?",
     answer:
-      "$FORGE will launch exclusively on Pump.fun as a fair launch—no presale, no private allocation. Simply connect your Solana wallet (Phantom, Solflare, etc.), ensure you have SOL, and swap directly on Pump.fun. Contract address will be announced on our official Twitter.",
+      "$FORGE will launch exclusively on Nad.fun as a fair launch—no presale, no private allocation. Simply connect your Monad wallet (Phantom, Solflare, etc.), ensure you have SOL, and swap directly on Nad.fun. Contract address will be announced on our official Twitter.",
   },
   {
-    question: "Why Pump.fun instead of traditional DEX launches?",
+    question: "Why Nad.fun instead of traditional DEX launches?",
     answer:
-      "Pump.fun ensures a truly fair launch where everyone has equal opportunity from block one. No presale dumps, no insider allocations, no hidden wallets. This aligns with our commitment to building a community-first project where early believers are rewarded fairly.",
+      "Nad.fun ensures a truly fair launch where everyone has equal opportunity from block one. No presale dumps, no insider allocations, no hidden wallets. This aligns with our commitment to building a community-first project where early believers are rewarded fairly.",
   },
   {
     question: "What makes Forge AI different from other AI tools?",
