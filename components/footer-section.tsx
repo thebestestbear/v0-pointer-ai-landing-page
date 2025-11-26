@@ -22,7 +22,7 @@ export function FooterSection() {
         </div>
         <div className="flex justify-start items-start gap-4">
           <a
-            href="https://x.com/raunofreiberg"
+            href="https://x.com/dmiiiitrii"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
@@ -31,7 +31,7 @@ export function FooterSection() {
             <Twitter className="w-full h-full text-muted-foreground hover:text-foreground transition-colors" />
           </a>
           <a
-            href="https://github.com/raunofreiberg"
+            href="https://github.com/vercel/v0-sdk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
