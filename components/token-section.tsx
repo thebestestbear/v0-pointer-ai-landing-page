@@ -84,7 +84,7 @@ export function TokenSection() {
             <div className="flex flex-col items-center gap-2 mb-6">
               <h3 className="text-foreground text-xl md:text-2xl font-semibold text-center">Tokenomics</h3>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#14F195]/30 bg-[#14F195]/10">
-                <span className="text-[#14F195] text-xs font-medium">Fair Launch via Pump.fun</span>
+                <span className="text-[#14F195] text-xs font-medium">Fair Launch via Nad.fun</span>
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-6">
@@ -93,18 +93,18 @@ export function TokenSection() {
                 <div className="text-muted-foreground text-sm">Total Supply</div>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5">
-                <div className="text-2xl md:text-3xl font-bold text-[#14F195]">95%</div>
+                <div className="text-2xl md:text-3xl font-bold text-[#14F195]">90%</div>
                 <div className="text-muted-foreground text-sm">Community</div>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5 relative">
-                <div className="text-2xl md:text-3xl font-bold text-primary">2.5%</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">5%</div>
                 <div className="text-muted-foreground text-sm">Dev</div>
                 <div className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-medium">
                   Locked
                 </div>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5">
-                <div className="text-2xl md:text-3xl font-bold text-foreground">2.5%</div>
+                <div className="text-2xl md:text-3xl font-bold text-foreground">5%</div>
                 <div className="text-muted-foreground text-sm">Ecosystem</div>
               </div>
             </div>
