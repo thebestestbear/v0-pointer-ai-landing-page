@@ -9,11 +9,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 // <CHANGE> Updated metadata with Forge AI branding and Twitter cards
 export const metadata: Metadata = {
-  title: "Forge AI - AI-Powered Code Agents on Solana",
+  title: "Forge AI - AI-Powered Code Agents on Monad",
   description:
-    "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Solana. Fair launch via Pump.fun.",
+    "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Monad. Fair launch via Nad.fun.",
   generator: "v0.app",
-  keywords: ["Forge AI", "AI agents", "Solana", "FORGE token", "code generation", "Vercel", "developer tools"],
+  keywords: ["Forge AI", "AI agents", "Monad", "FORGE token", "code generation", "Vercel", "developer tools"],
   authors: [{ name: "Forge AI Team" }],
   creator: "Forge AI",
   publisher: "Forge AI",
@@ -23,29 +23,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://forgeai.dev",
+    url: "https://forgev0.com",
     siteName: "Forge AI",
-    title: "Forge AI - AI-Powered Code Agents on Solana",
+    title: "Forge AI - AI-Powered Code Agents on Monad",
     description:
-      "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Solana. Fair launch via Pump.fun.",
+      "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Monad. Fair launch via Nad.fun.",
     // <CHANGE> Replace with your actual OG image
     images: [
       {
-        url: "https://i.ibb.co/jqnnCXK/IMG-0109.jpg",
+        url: "https://i.ibb.co/fVxr8wvm/image.png",
         width: 1200,
         height: 630,
-        alt: "Forge AI - AI-Powered Code Agents on Solana",
+        alt: "Forge AI - AI-Powered Code Agents on Monad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Forge AI - AI-Powered Code Agents on Solana",
+    title: "Forge AI - AI-Powered Code Agents on Monad",
     description:
-      "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Solana.",
+      "Unleash the power of AI agents that write, review, and optimize your code. Powered by the $FORGE token on Monad.",
     site: "@forgeai",
     // <CHANGE> Replace with your actual Twitter card image
-    images: ["https://i.ibb.co/jqnnCXK/IMG-0109.jpg"],
+    images: ["https://i.ibb.co/fVxr8wvm/image.png"],
   },
   robots: {
     index: true,
