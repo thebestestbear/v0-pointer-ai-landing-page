@@ -6,7 +6,7 @@ import { Check, Copy, Users } from "lucide-react"
 
 export function TokenSection() {
   const [copied, setCopied] = useState(false)
-  const contractAddress = "ADDYTBA"
+  const contractAddress = "LOADINGADDRESS"
 
   const copyToClipboard = () => {
     if (contractAddress !== "Coming Soon") {
@@ -33,7 +33,7 @@ export function TokenSection() {
               <svg className="w-4 h-4 text-[#14F195]" viewBox="0 0 128 128" fill="currentColor">
                 <path d="M93.94 42.63H37.83a3.4 3.4 0 01-2.41-5.81l13.86-13.86a3.39 3.39 0 012.41-1h56.11a3.4 3.4 0 012.41 5.81L96.35 41.63a3.39 3.39 0 01-2.41 1zM37.83 55.87h56.11a3.4 3.4 0 012.41 5.81L82.49 75.54a3.39 3.39 0 01-2.41 1H24a3.4 3.4 0 01-2.41-5.81l13.83-13.86a3.39 3.39 0 012.41-1zM93.94 89.37H37.83a3.4 3.4 0 00-2.41 5.81l13.86 13.86a3.39 3.39 0 002.41 1h56.11a3.4 3.4 0 002.41-5.81l-13.86-13.86a3.39 3.39 0 00-2.41-1z" />
               </svg>
-              <span className="text-[#14F195] text-sm font-medium">Built on Solana</span>
+              <span className="text-[#14F195] text-sm font-medium">Built on Monad</span>
             </div>
             <h2 className="w-full max-w-[700px] text-center text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px]">
               The $FORGE Token
@@ -58,7 +58,26 @@ export function TokenSection() {
               </div>
             </div>
           </div>
-
+          
+          {/* Contract Address Box */}
+          <div className="w-full max-w-[600px] p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex flex-col gap-1">
+                <span className="text-muted-foreground text-xs uppercase tracking-wider">Contract Address</span>
+                <span className="text-foreground font-mono text-sm">{contractAddress}</span>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={copyToClipboard}
+                disabled={contractAddress === "Coming Soon"}
+                className="gap-2 bg-transparent"
+              >
+                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                {copied ? "Copied!" : "Copy"}
+              </Button>
+            </div>
+          </div>
           
 
           <div className="w-full max-w-[900px] p-6 md:p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
@@ -166,42 +185,42 @@ export function TokenSection() {
                 <div className="w-12 h-12 rounded-full bg-[#14F195]/20 flex items-center justify-center text-[#14F195] font-bold text-xl">
                   1
                 </div>
-                <h4 className="text-foreground font-medium">Get a Solana Wallet</h4>
+                <h4 className="text-foreground font-medium">Get a Monad Wallet</h4>
                 <p className="text-muted-foreground text-sm">
-                  Download Phantom, Solflare, or your preferred Solana wallet
+                  Download Trust, Phantom, or your preferred Monad wallet
                 </p>
               </div>
               <div className="flex flex-col items-center text-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#14F195]/20 flex items-center justify-center text-[#14F195] font-bold text-xl">
                   2
                 </div>
-                <h4 className="text-foreground font-medium">Fund with SOL</h4>
+                <h4 className="text-foreground font-medium">Fund with MON</h4>
                 <p className="text-muted-foreground text-sm">
-                  Purchase SOL from an exchange and transfer to your wallet
+                  Purchase MON from an exchange and transfer to your wallet
                 </p>
               </div>
               <div className="flex flex-col items-center text-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#14F195]/20 flex items-center justify-center text-[#14F195] font-bold text-xl">
                   3
                 </div>
-                <h4 className="text-foreground font-medium">Buy on Pump.fun</h4>
-                <p className="text-muted-foreground text-sm">Visit Pump.fun and swap SOL for $FORGE at fair launch</p>
+                <h4 className="text-foreground font-medium">Buy on Nad.fun</h4>
+                <p className="text-muted-foreground text-sm">Visit Nad.fun and swap MON for $FORGE at fair launch</p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <Button size="lg" className="gap-2 bg-[#14F195] text-black hover:bg-[#14F195]/90" asChild>
-              <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+              <a href="http://nad.fun/tokens/LOADINGADDRESS" target="_blank" rel="noopener noreferrer">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2L2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
-                Trade on Pump.fun
+                Trade on Nad.fun
               </a>
             </Button>
             <Button variant="outline" size="lg" className="gap-2 bg-transparent" asChild>
-              <a href="https://solscan.io/" target="_blank" rel="noopener noreferrer">
-                View on Solscan
+              <a href="https://monadvision.com/address/LOADINGADDRESS" target="_blank" rel="noopener noreferrer">
+                View on Monad Vision
               </a>
             </Button>
           </div>
