@@ -31,7 +31,7 @@ export function TeamSection() {
           <h2 className="text-foreground text-3xl md:text-4xl font-semibold mb-4">Built by Engineers at Vercel</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Forge AI is led by experienced systems engineers from Vercel, bringing enterprise-grade infrastructure
-            expertise to the Solana ecosystem.
+            expertise to the Monad ecosystem.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export function TeamSection() {
             </div>
             <div className="mt-4 pt-4 border-t border-white/10">
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Leading Vercel's first venture into the Solana ecosystem. Building AI-powered developer tools that
+                Leading Vercel's first venture into the Monad ecosystem. Building AI-powered developer tools that
                 leverage blockchain for transparent, community-driven development.
               </p>
             </div>
